@@ -60,6 +60,7 @@ function App() {
   function signOut() {
     localStorage.removeItem("token");
     setUser('');
+    console.log("hello");
   }
 
 
