@@ -19,6 +19,7 @@ import Footer from './Footer';
 import axios from 'axios';
 import Profile from './Profile';
 import Contact from './Contact';
+import About from './About';
 
 
 
@@ -79,6 +80,7 @@ function App() {
         <Route index element={<MainLayout user={user}/>}/>
         <Route path="/LoginPage" element={<AuthRoute ><LoginPage/></AuthRoute>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about" element={<About/>}/>
         {user&&(<>
         <Route path="/Dashboard" element={<UserRoute><Dashboard/></UserRoute>}/>
         <Route path="/Profile" element={<UserRoute><Profile user={user}/></UserRoute>}/>
